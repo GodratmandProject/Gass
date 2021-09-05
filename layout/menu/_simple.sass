@@ -1,0 +1,17 @@
+@mixin inline-menu($item-width, $background-color, $logo, $logo-width)
+    background-color: $background-color
+    display: inline-block
+    position: relative
+    div
+        width: $item-width
+        display: inline-block
+        float: left
+    @if $logo
+        div img:first-child
+            width: 100%
+        div:first-child
+            width: $logo-width
+    a:hover, .active
+        color: $primery-color
+    
+
