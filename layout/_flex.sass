@@ -1,3 +1,12 @@
+@mixin flex($width...)
+    display: flex
+    div
+        padding: 0.75%
+    @for $i from 0 to length($width)
+        div:nth-child(#{$i + 1}) 
+            flex: #{nth($width, $i + 1)}
+                 
+        
 @mixin flexwsb($content, $sidebar)
     display: flex
     div
