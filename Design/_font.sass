@@ -1,31 +1,38 @@
 // Persian/RTL Font
 
 // Vazir Font
-
-@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css')
+%font-vazir-import
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css')
 
 $font-vazir: 'Vazir', sans-serif
 
 // Lotus Font
-
-@import url('https://cdn.fontcdn.ir/Font/Persian/Lotus/Lotus.css')
+%font-lotus-import
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Lotus/Lotus.css')
 
 $font-lotus: 'Lotus', sans-serif
 
 // Yekan Font
-
-@import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css')
+%font-yekan-import
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css')
 
 $font-yakan: 'Yekan', sans-serif
 
 // Nazanin Font
+%font-naznin-import
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Nazanin/Nazanin.css')
 
-@import url('https://cdn.fontcdn.ir/Font/Persian/Nazanin/Nazanin.css')
-
-$font-nazanin: 'Nazanin', sans-serif
+$font-nazanin: 'Nazanin', sans
 
 // Shabnam Font
-
-@import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css')
+%font-shbnam-import
+    @import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css')
 
 $font-shabnam: 'Shabnam', sans-serif
+
+
+
+// Google Font import Mixin
+
+@mixin google-font($family)
+  @import url("http://fonts.googleapis.com/css?family=#{$family}")

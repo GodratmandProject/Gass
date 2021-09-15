@@ -12,6 +12,15 @@
         div:first-child
             width: $logo-width
     a:hover, .active
-        color: $primery-color
-    
+        color: red
 
+@mixin flex-menu()
+    display: flex
+    padding: 5px
+    div
+        padding: 5px
+        flex: 0 1 auto
+        a:hover, &[active]
+            color: $blue-600
+
+    
