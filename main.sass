@@ -1,19 +1,26 @@
-// Remove default Margin & Padding
-    
-* 
-    margin: none
-    padding: none
-
-// body style
-
-body
-    padding: 10px
-
 // Designing 
 
 @import Design/color
 @import Design/font
 @import Design/typography
+
+// Setting default
+
+$primary-color: $green-500 !default
+
+// Remove default Margin & Padding & BullShit Style
+    
+* 
+    margin: none
+    padding: none
+    text-decoration: none
+    &:visited
+        color: $primary-color   
+
+// body style
+
+body
+    padding: 10px
 
 // Responsive
 
@@ -24,15 +31,12 @@ body
 
 @import layout/menu/simple
 @import layout/flex
+@import layout/menu/tabs
 
 // Animation
 
 // @import animation/simple
 // @import animation/loadanimate
-
-// Setting default
-
-$primary-color: $green-500 !default
 
 // Utilities
 
