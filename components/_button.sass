@@ -1,0 +1,22 @@
+@mixin btn($theme, $bg-color, $color, $color2)            
+    padding: 7.5px 10px
+    display: inline-block
+    transition: .2s
+    cursor: pointer
+    @if $theme == inline
+        background-color: $bg-color
+        color: $color
+        border: $bg-color 1px solid
+        border-radius: 5px
+        &:hover
+            background: none
+            color: $color2
+    @else 
+        @if $theme == outline
+            color: $color
+            border: $bg-color 1px solid
+            border-radius: 5px
+            &:hover
+                background-color: $bg-color
+                color: $color2
+            
