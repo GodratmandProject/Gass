@@ -1,31 +1,31 @@
 // Persian/RTL Font
 
 // Vazir Font
-%font-vazir-import
+@mixin font-vazir-import
     @import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css')
 
 $font-vazir: 'Vazir', sans-serif
 
 // Lotus Font
-%font-lotus-import
+@mixin font-lotus-import
     @import url('https://cdn.fontcdn.ir/Font/Persian/Lotus/Lotus.css')
 
 $font-lotus: 'Lotus', sans-serif
 
 // Yekan Font
-%font-yekan-import
+@mixin font-yekan-import
     @import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css')
 
-$font-yakan: 'Yekan', sans-serif
+$font-yekan: 'Yekan', sans-serif
 
 // Nazanin Font
-%font-naznin-import
+@mixin font-naznin-import
     @import url('https://cdn.fontcdn.ir/Font/Persian/Nazanin/Nazanin.css')
 
 $font-nazanin: 'Nazanin', sans
 
 // Shabnam Font
-%font-shbnam-import
+@mixin font-shbnam-import
     @import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css')
 
 $font-shabnam: 'Shabnam', sans-serif
@@ -40,11 +40,11 @@ $font-shabnam: 'Shabnam', sans-serif
 
 // Icon Font
 
-%line-awesome
+@mixin line-awesome
     @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css")
 
-%font-awesome
+@mixin font-awesome
     @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css")
 
-%material-icon
+@mixin material-icon
     +google-font('Material+Icons')
