@@ -1,9 +1,8 @@
 <div align="center">
 
-# Gass
-Godratmand Awesome Style Sheets, The Sass Framework
+<img src="logo.png" width="250px">
 
-![Logo](logo.png)
+Godratmand Awesome Style Sheets, The Sass Framework
 
 </div>
 
