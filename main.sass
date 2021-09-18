@@ -14,14 +14,14 @@ $primary-color: $blue-500 !default
     margin: none
     padding: none
     text-decoration: none
-    &:visited
-        color: $primary-color   
+    &:visited:not(.btn a)
+        color: $primary-color
 
 // Base style
 
 body
     padding: 10px
-a:hover
+a:hover:not(.btn a)
     opacity: 70%
 
 // Responsive
@@ -37,8 +37,7 @@ a:hover
 
 // Animation
 
-// @import animation/simple
-// @import animation/loadanimate
+@import animation/animate
 
 // Utilities
 

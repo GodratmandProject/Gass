@@ -11,6 +11,12 @@
         &:hover
             background: none
             color: $color2
+            a
+                &:visited, &:active
+                    color: $color2
+        a
+            &:visited, &:active
+                color: $color
     @else 
         @if $theme == outline
             color: $color
@@ -19,4 +25,10 @@
             &:hover
                 background-color: $bg-color
                 color: $color2
+                a
+                &:visited, &:active
+                    color: $color2
+            a
+            &:visited, &:active
+                color: $color
             
