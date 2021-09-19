@@ -3,8 +3,7 @@ logo: "/assets/images/logo.png"
 email: ggroup.tnluz@slmail.me
 description: >-
   Godratmand Awesome Style Sheets, The Sass Framework
-baseurl: "https://godratgroup.github.io/"
-url: "Gass"
+url: "https://godratgroup.github.io/Gass"
 
 # Build settings
 theme: "just-the-docs"
