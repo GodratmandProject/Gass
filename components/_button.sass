@@ -1,4 +1,4 @@
-@mixin btn($theme, $bg-color, $color, $color2)            
+@mixin btn($theme, $bg-color, $color, $color-hover)            
     padding: 7.5px 10px
     display: inline-block
     transition: .2s
@@ -10,10 +10,10 @@
         border-radius: 5px
         &:hover
             background: none
-            color: $color2
+            color: $color-hover
             a
                 &:visited, &:active
-                    color: $color2
+                    color: $color-hover
         a
             &:visited, &:active
                 color: $color
@@ -24,10 +24,10 @@
             border-radius: 5px
             &:hover
                 background-color: $bg-color
-                color: $color2
+                color: $color-hover
                 a
                 &:visited, &:active
-                    color: $color2
+                    color: $color-hover
             a
             &:visited, &:active
                 color: $color
