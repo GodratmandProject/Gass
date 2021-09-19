@@ -8,7 +8,7 @@ nav_order: 1
 
 <div align="center">
 
-<img src="/assets/images/logo.png" width="250px"> 
+<img src="./assets/images/logo.png" width="250px"> 
 
 Godratmand Awesome Style Sheets, The Sass Framework
 
