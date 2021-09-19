@@ -11,6 +11,10 @@ remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: "assets/images"
+
 # Theme Value
 
 # Enable or disable the site search
