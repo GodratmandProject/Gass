@@ -1,34 +1,26 @@
 @mixin btn($theme, $bg-color, $color, $color-hover)            
     padding: 7.5px 10px
+    color: $color
     display: inline-block
     transition: .2s
     cursor: pointer
-    @if $theme == inline
-        background-color: $bg-color
-        color: $color
-        border: $bg-color 1px solid
-        border-radius: 5px
-        &:hover
-            background: none
-            color: $color-hover
-            a
-                &:visited, &:active
-                    color: $color-hover
+    border: $bg-color 1px solid
+    border-radius: 5px
+    &:hover
+        color: $color-hover
         a
             &:visited, &:active
-                color: $color
+                color: $color-hover
+    a
+        &:visited, &:active
+            color: $color
+    &:active
+        transform: scale(0.8)
+    @if $theme == inline
+        background-color: $bg-color
+        &:hover
+            background: none
     @else 
         @if $theme == outline
-            color: $color
-            border: $bg-color 1px solid
-            border-radius: 5px
             &:hover
                 background-color: $bg-color
-                color: $color-hover
-                a
-                &:visited, &:active
-                    color: $color-hover
-            a
-            &:visited, &:active
-                color: $color
-            
