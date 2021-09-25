@@ -14,11 +14,15 @@
     a:hover, .active
         color: red
 
-@mixin flex-menu()
+@mixin flex-menu($full)
     display: flex
     div
         padding: 5px
-        flex: 0 1 auto
+        @if $full
+            flex: 1
+            text-align: center
+        @else 
+            flex: 0 1 auto
         a:hover, &[active]
             color: $primary-color
 
