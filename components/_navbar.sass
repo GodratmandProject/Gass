@@ -1,0 +1,34 @@
+@mixin navbar($theme, $back-color, $active-color)
+    position: fixed
+    top: 0
+    background-color: $back-color
+    width: 100%
+    @if $theme == boxed
+        padding: 15px
+        nav
+            +flex-menu
+            div
+                border-radius: 2.5px
+                margin-right: 5px
+    @else 
+        @if $theme == simple
+            nav
+                display: flex
+                div
+                    padding: 15px
+        @else 
+            nav
+                display: flex
+    nav
+        flex-wrap: wrap
+        div
+            right: 0
+            transition: 300ms
+            &[logo]
+                display: block
+                @media screen and (min-width: $desktop) 
+                    margin-right: auto
+            &:last-child
+                margin-right: 75px
+            &:not(&[logo]):hover, &[active]
+                background-color: $active-color
