@@ -1,17 +1,20 @@
-@mixin tabs($theme)
-    +flex-menu()
+@mixin tabs($theme, $full)
+    +flex-menu($full)
     div
         padding: 5px 7.5px
+        transition-duration: 200ms
+        &:hover
+            cursor: pointer
     @if $theme == "modern"
         border-bottom: 1.5px $grey-800 solid
         div
-            &[active]
+            &[active], &:hover
                 border-bottom: 2.25px $grey-900 solid
     @else 
         @if $theme == "box"
             div
                 border-bottom: 1.5px $grey-600 solid
-                &[active]
+                &[active], &:hover
                     border: 1.5px $grey-600 solid
                     border-bottom: none
                     border-top-left-radius: 7.5px
@@ -26,7 +29,7 @@
                     &:last-child
                         border-top-right-radius: 5px
                         border-bottom-right-radius: 5px
-                    &[active]
+                    &[active], &:hover
                         background-color: $primary-color
                         color: white
                         a:visited
@@ -35,9 +38,3 @@
                             color: white
                     &:not(&:first-child)
                         border-left: none
-                        
-                     
-
-
-        
-         
