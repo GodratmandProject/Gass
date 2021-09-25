@@ -7,15 +7,3 @@
 %block, *[block]
     &:not(:last-child)
         margin-bottom: 1.5rem
-
-@mixin bar($width, $color, $text-color)        
-    width: 100%
-    background-color: grey
-    border-radius: 15px
-    @extend %text-center
-    div
-        padding: 3px 15px
-        width: $width
-        border-radius: 15px
-        background-color: $color
-        color: $text-color
