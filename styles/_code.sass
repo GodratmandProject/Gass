@@ -1,0 +1,35 @@
+@mixin code-block($theme)
+    pre
+        direction: ltr
+        text-align: left
+    code
+        direction: ltr
+        float: left
+    @if $theme == normal            
+        pre 
+            border-radius: 6px
+            padding: 10px
+            box-shadow: inset 0 0 0 1px #dae4ed, 0 5px 15px -5px rgba(0, 0, 0, 0.1)
+            margin: 2rem 0
+
+        code
+            display: inline-block
+            padding: 0 0.5em
+            line-height: 1.4em
+            border-radius: 3px
+    @else 
+        @if $theme == github-light
+            code
+                display: inline-block
+                background-color: #f6f8fa
+                border-radius: 3px
+                padding: 0.0.5em
+        @else 
+            @if $theme == github-dark
+                code
+                    display: inline-block
+                    background-color: #161b22
+                    color: #f6f8fa
+                    border-radius: 3px
+                    padding: 0.0.5em
+            @else
