@@ -1,0 +1,26 @@
+$primary-color: #F06292
+
+@import ../../../main
+
+*
+    background-color: #161616
+    color: #fff
+
+
+header
+    @extend %text-center
+    @extend %center
+    @extend %v-center
+    img
+        width: 300px
+
+.tab
+    +tabs(modern, false)
+    @extend %h-center
+    transform: translate(-50%, -100%)
+
+.main
+    @media screen and (min-width: $desktop) 
+        margin: auto
+        width: 700px
+    
