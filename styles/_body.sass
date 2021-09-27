@@ -1,0 +1,17 @@
+@mixin body($theme, $colors...)
+    @if $theme == phonix
+        body 
+            background-color: #{nth($colors, 1)}
+            padding: 10px
+        @media screen and (min-width: $desktop)
+            screen
+                display: block
+                background-color: #{nth($colors, 2)}
+                width: 70%
+                margin: auto
+                margin-top: 2%
+                margin-bottom: 2%
+                border: 2.5px solid #{nth($colors, 3)}
+                border-radius: 15px
+                padding: 15px
+    @else 
