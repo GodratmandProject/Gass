@@ -173,8 +173,28 @@ header img {
 }
 
 @media screen and (min-width: 764px) {
-  .main {
+  body {
     margin: auto;
     width: 700px;
   }
+}
+
+pre {
+  direction: ltr;
+  text-align: left;
+}
+
+code {
+  direction: ltr;
+  float: left;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+code {
+  display: inline-block;
+  background-color: #161b22;
+  color: #f6f8fa;
+  border-radius: 3px;
+  padding: 0 0.5em;
 }
