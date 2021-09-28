@@ -14,4 +14,11 @@
                 border: 2.5px solid #{nth($colors, 3)}
                 border-radius: 15px
                 padding: 15px
-    @else 
+    @else
+        @if $theme == center-body
+            body
+                @media screen and (min-width: $desktop) 
+                    margin: auto
+                    width: 700px
+        @else 
+            
