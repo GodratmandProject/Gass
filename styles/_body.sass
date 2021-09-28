@@ -15,10 +15,15 @@
                 border-radius: 15px
                 padding: 15px
     @else
-        @if $theme == center-body
+        @if $theme == width-center
             body
                 @media screen and (min-width: $desktop) 
                     margin: auto
                     width: 700px
         @else 
-            
+            @if $theme == box-center
+                body
+                    margin-left: 50%
+                    margin-top: 50%
+                    transform: translate(-50%, -50%)
+            @else 
