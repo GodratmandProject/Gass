@@ -17,15 +17,5 @@ header
         width: 300px
 
 .tab
-    +tabs(modern, false)
+    +tabs(toggle, false)
     @extend %h-center
-    transform: translate(-50%, -100%)
-
-#docs
-    display: ruby-text
-    .docs
-        +tabs(toggle, false)
-
-+body(center-body)
-
-+code-block(github-dark)
